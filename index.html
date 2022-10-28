@@ -3,7 +3,6 @@
 <style>
     .filterDiv {
         float: left;
-        background-color: #2196F3;
         color: #ffffff;
         width:fit-content;
         line-height: 100px;
@@ -12,9 +11,20 @@
         display: none;
 
         position: relative;
-        max-width: 800px; /* Maximum width */
-        margin: 15px; /* Center it */
         
+        margin: 15px; 
+        height: fit-content;
+        place-self: center;
+        width: 90%;
+
+        font-size: larger;
+    }
+
+    @media (min-width: 1200px) {
+        .filterDiv{
+            width: 80%;
+            font-size: medium;            
+        }
     }
 
     .show {
@@ -63,12 +73,12 @@
         position: absolute; /* Position the background text */
         bottom: 0; /* At the bottom. Use top:0 to append it to the top */
         background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
         color: #f1f1f1; /* Grey text */
         width: 100%; /* Full width */
         line-height: normal;
-        
     }
+
 </style>
 
 <body>
@@ -87,80 +97,80 @@
         <div class="filterDiv" data-objecttype="cars">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="colors fruits">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="cars">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="colors">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="cars animals">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="colors">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="fruits">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="fruits animals">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="fruits">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="filterDiv" data-objecttype="fruits">
             <img src="002.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         
         <div class="filterDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
             <div class="content">
-              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+              <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div> 
     </div>
