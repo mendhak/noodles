@@ -1,9 +1,14 @@
 module.exports = (function(eleventyConfig){
 
     //Remove image tag from the rendered Markdown content, because it's in the frontmatter.
-    eleventyConfig.addFilter("myFilter", function(value) {
-        return value.replace(/<img[^>]*>/g,"")
-      });
+    eleventyConfig.addFilter("removeImgTag", function(renderedMarkdown) {
+        return renderedMarkdown.replace(/<img[^>]*>/g,"")
+    });
+
+    //Render a number of stars based on the rating passed in
+    eleventyConfig.addFilter("stars", function(rating) {
+        return "⭐".repeat(parseFloat(rating));
+    });
 
     //Read Markdown files from the noodles directory.  
     eleventyConfig.addCollection('sections', function(collectionApi) {
