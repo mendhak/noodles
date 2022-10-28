@@ -5,11 +5,16 @@
         float: left;
         background-color: #2196F3;
         color: #ffffff;
-        width: 100px;
+        width:fit-content;
         line-height: 100px;
         text-align: center;
-        margin: 2px;
+        
         display: none;
+
+        position: relative;
+        max-width: 800px; /* Maximum width */
+        margin: 15px; /* Center it */
+        
     }
 
     .show {
@@ -19,7 +24,21 @@
     .container {
         margin-top: 20px;
         overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: auto;
+        display: grid;
     }
+
+    @media (min-width: 1200px){
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            margin: auto;
+        }
+
+    }
+
 
     /* Style the buttons */
     .btn {
@@ -38,6 +57,18 @@
         background-color: #666;
         color: white;
     }
+
+
+    .filterDiv .content {
+        position: absolute; /* Position the background text */
+        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+        background: rgb(0, 0, 0); /* Fallback color */
+        background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+        color: #f1f1f1; /* Grey text */
+        width: 100%; /* Full width */
+        line-height: normal;
+        
+    }
 </style>
 
 <body>
@@ -53,19 +84,85 @@
     </div>
 
     <div class="container">
-        <div class="filterDiv cars" data-objecttype="cars">BMW</div>
-        <div class="filterDiv colors fruits" data-objecttype="colors fruits">Orange</div>
-        <div class="filterDiv cars" data-objecttype="cars">Volvo</div>
-        <div class="filterDiv colors" data-objecttype="colors">Red</div>
-        <div class="filterDiv cars animals" data-objecttype="cars animals">Mustang</div>
-        <div class="filterDiv colors" data-objecttype="colors">Blue</div>
-        <div class="filterDiv animals" data-objecttype="animals">Cat</div>
-        <div class="filterDiv animals" data-objecttype="animals">Dog</div>
-        <div class="filterDiv fruits" data-objecttype="fruits">Melon</div>
-        <div class="filterDiv fruits animals" data-objecttype="fruits animals">Kiwi</div>
-        <div class="filterDiv fruits" data-objecttype="fruits">Banana</div>
-        <div class="filterDiv fruits" data-objecttype="fruits">Lemon</div>
-        <div class="filterDiv animals" data-objecttype="animals">Cow</div>
+        <div class="filterDiv" data-objecttype="cars">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="colors fruits">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="cars">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="colors">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="cars animals">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="colors">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="animals">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="animals">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="fruits">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="fruits animals">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="fruits">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        <div class="filterDiv" data-objecttype="fruits">
+            <img src="002.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div>
+        
+        <div class="filterDiv" data-objecttype="animals">
+            <img src="001.jpg" style="width:100%;">
+            <div class="content">
+              <h1>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h1>
+            </div>
+        </div> 
     </div>
 
     <script>
