@@ -1,5 +1,7 @@
 module.exports = (function(eleventyConfig){
 
+    eleventyConfig.setDynamicPermalinks(false);
+
     //Remove image tag from the rendered Markdown content, because it's in the frontmatter.
     eleventyConfig.addFilter("removeImgTag", function(renderedMarkdown) {
         return renderedMarkdown.replace(/<img[^>]*>/g,"")
@@ -12,7 +14,30 @@ module.exports = (function(eleventyConfig){
 
     //Read Markdown files from the noodles directory.  
     eleventyConfig.addCollection('sections', function(collectionApi) {
-        return sections = collectionApi.getFilteredByGlob('noodles/*.*');
+        let sections = collectionApi.getFilteredByGlob('noodles/*.*');
+        sections.forEach(item => {
+
+            //Also, parse the content, grab the image path being used, and add that to the collection data. 
+            const regexImage = /!\[[^\]]*]\(([^\)]*)\)/; 
+            const match = item.template.frontMatter.content.match(regexImage);
+            if(match){
+                item.data.imagePath=match[1];
+            }
+            else {
+                item.data.imagePath = item.data.image;
+            }
+
+            //Also, use the file name as the title, if a title is not already set in the frontmatter. 
+            if(!item.data.title){
+                item.data.title = item.fileSlug;
+            }
+
+
+        });
+
+        console.log(sections);
+        
+        return sections;
     });
 
     // Copies the images files straight into the output folder, so that the HTML can reference it. 

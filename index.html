@@ -162,7 +162,7 @@
 
         {% for sect in collections.sections %}
         <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}">
-            <img src="images/{{ sect.data.image }}" alt="{{ sect.data.title }}" >
+            <img src="{{ sect.data.imagePath }}" alt="{{ sect.data.title }}" >
             <div class="title">
                 <h3>{{ sect.data.title }} {{ sect.data.rating | stars }}</h3>
             </div>
@@ -175,105 +175,7 @@
         </div>
         {% endfor %}
 
-        <div class="noodleDiv" data-noodletype="broad" data-rating="5">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐⭐</h3>
-            </div>
-            <div class="description">
-                <span>
-                    <p><br />Really good, a bit spicy but not overwhelming. Flat broad noodles. Easy with chopsticks!
-                        Put in bowl, add boiling water for 5 mins then drain the water, then add the ingredients and mix
-                        it.</p>
-                    <a
-                        href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry
-                        Mart</a>
-                </span>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="broad" data-rating="3">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
-            </div>
-            <div class="description">
-                <span>
-                    <p><br />Really good, a bit spicy but not overwhelming. Flat broad noodles. Easy with chopsticks!
-                        Put in bowl, add boiling water for 5 mins then drain the water, then add the ingredients and mix
-                        it.</p>
-                    <a
-                        href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry
-                        Mart</a>
-                </span>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="broad" data-rating="3">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="4">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="1">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="0">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="glassy" data-rating="5">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="glassy" data-rating="3">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="4">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="2">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="3">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
-            </div>
-        </div>
-        <div class="noodleDiv" data-noodletype="thin" data-rating="2">
-            <img src="002.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐</h3>
-            </div>
-        </div>
-
-        <div class="noodleDiv" data-noodletype="broad" data-rating="1">
-            <img src="001.jpg" style="width:100%;">
-            <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐</h3>
-            </div>
-        </div>
+        
     </div>
 
     <script>

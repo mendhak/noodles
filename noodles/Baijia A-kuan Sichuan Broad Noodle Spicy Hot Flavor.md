@@ -1,7 +1,5 @@
 ---
-title: Baijia A-kuan Sichuan Broad Noodle Spicy & Hot Flavor
-permalink: false
-image: 002.jpg
+
 rating: 5
 noodletype: broad
 link_text: Starry Mart
@@ -12,4 +10,4 @@ Really good, one of my favorites, a flat broad noodle that's easy with chopstick
 
 Put in bowl, add hot water for 5 mins then drain the water. Add the ingredients and mix it up.  
 
-![image](images/002.jpg)
+![image](images/001.jpg)
