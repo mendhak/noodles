@@ -22,7 +22,7 @@
         float: left;
         color: #ffffff;
         width: fit-content;
-        line-height: 100px;
+        
         text-align: center;
 
         position: relative;
@@ -34,6 +34,8 @@
 
         font-size: larger;
 
+        cursor: pointer;
+
         display: none;
     }
 
@@ -44,7 +46,7 @@
         }
     }
 
-    .noodleDiv .description {
+    .noodleDiv .title {
         position: absolute;
         bottom: 0;
         background: rgb(0, 0, 0);
@@ -52,6 +54,27 @@
         color: #f1f1f1;
         width: 100%;
         line-height: normal;
+    }
+
+    .description {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(57, 57, 57, 0.9);
+        top: 0;
+        left: 0;
+        transform: scale(0);
+        transition: all 0.2s 0.1s ease-in-out;
+        color: #fff;
+        
+        /* center overlay content */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .noodleDiv:hover .description {
+        transform: scale(1);
     }
 
 
@@ -91,80 +114,83 @@
     <div class="container">
         <div class="noodleDiv" data-objecttype="cars">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
+            <span class="description">Really good, a bit spicy but not overwhelming.  Flat broad noodles.   Easy with chopsticks! 
+                Put in bowl, add boiling water for 5 mins then drain the water, then add the ingredients and mix it. 
+                </span>
         </div>
         <div class="noodleDiv" data-objecttype="colors fruits">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="cars">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="colors">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="cars animals">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="colors">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="fruits">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="fruits animals">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="fruits">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
         <div class="noodleDiv" data-objecttype="fruits">
             <img src="002.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
 
         <div class="noodleDiv" data-objecttype="animals">
             <img src="001.jpg" style="width:100%;">
-            <div class="description">
+            <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
