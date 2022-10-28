@@ -72,8 +72,7 @@
         filterSelection("all")
 
         function filterSelection(c) {
-            var x, i;
-            //x = document.getElementsByClassName("filterDiv");
+
             let querySelector="[data-objecttype]";
             if (c != "all") {
                 querySelector=`[data-objecttype='${c}']`;
@@ -95,9 +94,12 @@
         var btns = btnContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function () {
+                //Make current active button inactive
                 var current = document.getElementsByClassName("active");
-                current[0].className = current[0].className.replace(" active", "");
-                this.className += " active";
+                current[0].classList.remove("active");
+
+                //Make current button active
+                this.classList.add("active");
             });
         }
     </script>
