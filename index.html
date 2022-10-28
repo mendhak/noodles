@@ -66,6 +66,10 @@
             line-height: normal;
         }
 
+        .noodleDiv img { 
+            width: 100%;
+        }
+
         .description {
             position: absolute;
             width: 100%;
@@ -155,6 +159,23 @@
     </div>
 
     <div class="container">
+
+        {% for sect in collections.sections %}
+        <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}">
+            <img src="{{ sect.data.image }}" >
+            <div class="title">
+                <h3>{{ sect.data.title }}</h3>
+            </div>
+            <div class="description">
+                <span>
+                    {{ sect.templateContent }}
+                    <a
+                        href="{{ sect.data.link_url }}">{{ sect.data.link_text }}</a>
+                </span>
+            </div>
+        </div>
+        {% endfor %}
+
         <div class="noodleDiv" data-noodletype="broad" data-rating="5">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
