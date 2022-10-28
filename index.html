@@ -303,33 +303,25 @@
 
         }
 
-        // Add active class to the current button (highlight it)
-        var buttonRatingContainer = document.getElementById("buttonRatingContainer");
-        var btns = buttonRatingContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                //Make current active button inactive
-                var current = buttonRatingContainer.getElementsByClassName("active");
-                current[0].classList.remove("active");
+        setupButtonHighlightMethod("buttonRatingContainer");
+        setupButtonHighlightMethod("buttonNoodleTypeContainer");
 
-                //Make current button active
-                this.classList.add("active");
-            });
+        function setupButtonHighlightMethod(buttonContainerId){
+          // Add active class to the current button (highlight it)
+            var buttonContainer = document.getElementById(buttonContainerId);
+            var btns = buttonContainer.getElementsByClassName("btn");
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].addEventListener("click", function () {
+                    //Make current active button inactive
+                    var current = buttonContainer.getElementsByClassName("active");
+                    current[0].classList.remove("active");
+
+                    //Make current button active
+                    this.classList.add("active");
+                });
+            }  
         }
 
-        // Add active class to the current button (highlight it)
-        var buttonNoodleTypeContainer = document.getElementById("buttonNoodleTypeContainer");
-        var btns = buttonNoodleTypeContainer.getElementsByClassName("btn");
-        for (var i = 0; i < btns.length; i++) {
-            btns[i].addEventListener("click", function () {
-                //Make current active button inactive
-                var current = buttonNoodleTypeContainer.getElementsByClassName("active");
-                current[0].classList.remove("active");
-
-                //Make current button active
-                this.classList.add("active");
-            });
-        }
     </script>
 
 </body>
