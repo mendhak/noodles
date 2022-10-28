@@ -133,7 +133,7 @@
 
 <body>
 
-    <div id="myBtnContainer">
+    <div id="buttonRatingContainer">
         <button class="btn active" onclick="filterByRating('all')"> Show all</button>
         <button class="btn" onclick="filterByRating(5)"> ⭐⭐⭐⭐⭐</button>
         <button class="btn" onclick="filterByRating(4)"> ⭐⭐⭐⭐</button>
@@ -142,8 +142,15 @@
         <button class="btn" onclick="filterByRating(1)"> ⭐</button>
     </div>
 
+    <div id="buttonNoodleTypeContainer">
+        <button class="btn active" onclick="filterByNoodleType('all')"> Show all</button>
+        <button class="btn" onclick="filterByNoodleType('broad')"> Broad noodles</button>
+        <button class="btn" onclick="filterByNoodleType('thin')"> Thin noodles</button>
+        <button class="btn" onclick="filterByNoodleType('glassy')"> Glassy noodles</button>
+    </div>
+
     <div class="container">
-        <div class="noodleDiv" data-objecttype="cars" data-rating="5">
+        <div class="noodleDiv" data-noodletype="broad" data-rating="5">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐⭐</h3>
@@ -159,7 +166,7 @@
                 </span>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="colors fruits" data-rating="3">
+        <div class="noodleDiv" data-noodletype="broad" data-rating="3">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
@@ -175,68 +182,68 @@
                 </span>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="cars" data-rating="3">
+        <div class="noodleDiv" data-noodletype="broad" data-rating="3">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="colors" data-rating="4">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="4">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="cars animals" data-rating="1">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="1">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="colors" data-rating="0">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="0">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="animals" data-rating="5">
+        <div class="noodleDiv" data-noodletype="glassy" data-rating="5">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="animals" data-rating="3">
+        <div class="noodleDiv" data-noodletype="glassy" data-rating="3">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="fruits" data-rating="4">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="4">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="fruits animals" data-rating="2">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="2">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="fruits" data-rating="3">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="3">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
             </div>
         </div>
-        <div class="noodleDiv" data-objecttype="fruits" data-rating="2">
+        <div class="noodleDiv" data-noodletype="thin" data-rating="2">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐</h3>
             </div>
         </div>
 
-        <div class="noodleDiv" data-objecttype="animals" data-rating="1">
+        <div class="noodleDiv" data-noodletype="broad" data-rating="1">
             <img src="001.jpg" style="width:100%;">
             <div class="title">
                 <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐</h3>
@@ -246,6 +253,7 @@
 
     <script>
         filterByRating("all")
+        filterByNoodleType("all")
 
         function filterByRating(c) {
 
@@ -266,14 +274,47 @@
 
         }
 
+        function filterByNoodleType(c) {
+
+            let querySelector = "[data-noodletype]";
+            if (c != "all") {
+                querySelector = `[data-noodletype*='${c}']`;
+            };
+
+            //Hide all items
+            document.querySelectorAll("[data-noodletype]").forEach(i => {
+                i.classList.remove("show");
+            });
+
+            //Show items based on the filter
+            document.querySelectorAll(querySelector).forEach(i => {
+                i.classList.add("show");
+            })
+
+        }
+
 
         // Add active class to the current button (highlight it)
-        var btnContainer = document.getElementById("myBtnContainer");
-        var btns = btnContainer.getElementsByClassName("btn");
+        var buttonRatingContainer = document.getElementById("buttonRatingContainer");
+        var btns = buttonRatingContainer.getElementsByClassName("btn");
         for (var i = 0; i < btns.length; i++) {
             btns[i].addEventListener("click", function () {
                 //Make current active button inactive
-                var current = document.getElementsByClassName("active");
+                var current = buttonRatingContainer.getElementsByClassName("active");
+                current[0].classList.remove("active");
+
+                //Make current button active
+                this.classList.add("active");
+            });
+        }
+
+        // Add active class to the current button (highlight it)
+        var buttonNoodleTypeContainer = document.getElementById("buttonNoodleTypeContainer");
+        var btns = buttonNoodleTypeContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                //Make current active button inactive
+                var current = buttonNoodleTypeContainer.getElementsByClassName("active");
                 current[0].classList.remove("active");
 
                 //Make current button active
