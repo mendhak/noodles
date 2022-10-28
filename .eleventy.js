@@ -52,7 +52,7 @@ module.exports = (function(eleventyConfig){
     return {
         dir: {
           input: ".",
-          output: "output",
+          output: "docs",
           templateFormats: ["html"]
         }
     }
