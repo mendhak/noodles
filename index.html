@@ -134,7 +134,7 @@
 <body>
 
     <div id="buttonRatingContainer">
-        <button class="btn active" onclick="filterByRating('all')"> Show all</button>
+        <button class="btn active" onclick="filterByRating('all')"> All ratings</button>
         <button class="btn" onclick="filterByRating(5)"> ⭐⭐⭐⭐⭐</button>
         <button class="btn" onclick="filterByRating(4)"> ⭐⭐⭐⭐</button>
         <button class="btn" onclick="filterByRating(3)"> ⭐⭐⭐</button>
@@ -143,7 +143,7 @@
     </div>
 
     <div id="buttonNoodleTypeContainer">
-        <button class="btn active" onclick="filterByNoodleType('all')"> Show all</button>
+        <button class="btn active" onclick="filterByNoodleType('all')"> All types</button>
         <button class="btn" onclick="filterByNoodleType('broad')"> Broad noodles</button>
         <button class="btn" onclick="filterByNoodleType('thin')"> Thin noodles</button>
         <button class="btn" onclick="filterByNoodleType('glassy')"> Glassy noodles</button>
@@ -252,6 +252,12 @@
     </div>
 
     <script>
+
+        var selectedFilters = {
+            rating: "",
+            noodleType: ""
+        }
+
         filterByRating("all")
         filterByNoodleType("all")
 
@@ -262,15 +268,8 @@
                 querySelector = `[data-rating*='${c}']`;
             };
 
-            //Hide all items
-            document.querySelectorAll("[data-rating]").forEach(i => {
-                i.classList.remove("show");
-            });
-
-            //Show items based on the filter
-            document.querySelectorAll(querySelector).forEach(i => {
-                i.classList.add("show");
-            })
+            selectedFilters.rating = querySelector;
+            applyFilters();
 
         }
 
@@ -281,18 +280,24 @@
                 querySelector = `[data-noodletype*='${c}']`;
             };
 
-            //Hide all items
+            selectedFilters.noodleType = querySelector;
+            applyFilters();
+
+        }
+
+        function applyFilters(){
+            // Use any class here, just hide all the items.
             document.querySelectorAll("[data-noodletype]").forEach(i => {
                 i.classList.remove("show");
             });
 
-            //Show items based on the filter
-            document.querySelectorAll(querySelector).forEach(i => {
+            let combinedQuerySelectors = selectedFilters.rating + selectedFilters.noodleType
+
+            document.querySelectorAll(combinedQuerySelectors).forEach(i => {
                 i.classList.add("show");
             })
 
         }
-
 
         // Add active class to the current button (highlight it)
         var buttonRatingContainer = document.getElementById("buttonRatingContainer");
