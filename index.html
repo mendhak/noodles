@@ -162,13 +162,13 @@
 
         {% for sect in collections.sections %}
         <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}">
-            <img src="{{ sect.data.image }}" >
+            <img src="images/{{ sect.data.image }}" alt="{{ sect.data.title }}" >
             <div class="title">
                 <h3>{{ sect.data.title }}</h3>
             </div>
             <div class="description">
                 <span>
-                    {{ sect.templateContent }}
+                    {{ sect.templateContent | myFilter }}
                     <a
                         href="{{ sect.data.link_url }}">{{ sect.data.link_text }}</a>
                 </span>
