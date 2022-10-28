@@ -1,6 +1,25 @@
 <!DOCTYPE html>
 <html>
 <style>
+
+    .container {
+        margin-top: 20px;
+        overflow: hidden;
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+        margin: auto;
+        display: grid;
+    }
+
+    @media (min-width: 1200px){
+        .container{
+            grid-template-columns: repeat(3, 1fr);
+            width: 100%;
+            margin: auto;
+        }
+
+    }
+
     .filterDiv {
         float: left;
         color: #ffffff;
@@ -27,28 +46,20 @@
         }
     }
 
+    .filterDiv .content {
+        position: absolute; 
+        bottom: 0; 
+        background: rgb(0, 0, 0); 
+        background: rgba(0, 0, 0, 0.75); 
+        color: #f1f1f1; 
+        width: 100%; 
+        line-height: normal;
+    }
+
+
     .show {
         display: block;
     }
-
-    .container {
-        margin-top: 20px;
-        overflow: hidden;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        margin: auto;
-        display: grid;
-    }
-
-    @media (min-width: 1200px){
-        .container{
-            grid-template-columns: repeat(3, 1fr);
-            width: 100%;
-            margin: auto;
-        }
-
-    }
-
 
     /* Style the buttons */
     .btn {
@@ -69,21 +80,9 @@
     }
 
 
-    .filterDiv .content {
-        position: absolute; /* Position the background text */
-        bottom: 0; /* At the bottom. Use top:0 to append it to the top */
-        background: rgb(0, 0, 0); /* Fallback color */
-        background: rgba(0, 0, 0, 0.75); /* Black background with 0.5 opacity */
-        color: #f1f1f1; /* Grey text */
-        width: 100%; /* Full width */
-        line-height: normal;
-    }
-
 </style>
 
 <body>
-
-
 
     <div id="myBtnContainer">
         <button class="btn active" onclick="filterSelection('all')"> Show all</button>
