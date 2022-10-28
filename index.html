@@ -128,12 +128,16 @@
             background-color: #666;
             color: white;
         }
+
+        .buttonContainer {
+            padding: 5px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div id="buttonRatingContainer">
+    <div id="buttonRatingContainer" class="buttonContainer">
         <button class="btn active" onclick="filterByRating('all')"> All ratings</button>
         <button class="btn" onclick="filterByRating(5)"> ⭐⭐⭐⭐⭐</button>
         <button class="btn" onclick="filterByRating(4)"> ⭐⭐⭐⭐</button>
@@ -142,7 +146,7 @@
         <button class="btn" onclick="filterByRating(1)"> ⭐</button>
     </div>
 
-    <div id="buttonNoodleTypeContainer">
+    <div id="buttonNoodleTypeContainer" class="buttonContainer">
         <button class="btn active" onclick="filterByNoodleType('all')"> All types</button>
         <button class="btn" onclick="filterByNoodleType('broad')"> Broad noodles</button>
         <button class="btn" onclick="filterByNoodleType('thin')"> Thin noodles</button>
