@@ -1,129 +1,135 @@
 <!DOCTYPE html>
 <html>
-<style>
-    body {
-        font-family: sans-serif;
-    }
 
-    .container {
-        margin-top: 20px;
-        overflow: hidden;
-        grid-template-columns: repeat(2, 1fr);
-        width: 100%;
-        margin: auto;
-        display: grid;
-    }
+<head>
 
-    @media (min-width: 1200px) {
+    <meta charset="UTF-8">
+
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+
         .container {
-            grid-template-columns: repeat(3, 1fr);
+            margin-top: 20px;
+            overflow: hidden;
+            grid-template-columns: repeat(2, 1fr);
             width: 100%;
             margin: auto;
+            display: grid;
         }
-    }
 
-    .noodleDiv {
-        float: left;
-        color: #ffffff;
-        width: fit-content;
+        @media (min-width: 1200px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+                width: 100%;
+                margin: auto;
+            }
+        }
 
-        text-align: center;
-
-        position: relative;
-
-        margin: 15px;
-        height: fit-content;
-        place-self: center;
-        width: 90%;
-
-        font-size: larger;
-
-        cursor: pointer;
-
-        display: none;
-    }
-
-    @media (min-width: 1200px) {
         .noodleDiv {
-            width: 80%;
-            font-size: medium;
+            float: left;
+            color: #ffffff;
+            width: fit-content;
+
+            text-align: center;
+
+            position: relative;
+
+            margin: 15px;
+            height: fit-content;
+            place-self: center;
+            width: 90%;
+
+            font-size: larger;
+
+            cursor: pointer;
+
+            display: none;
         }
-    }
 
-    .noodleDiv .title {
-        position: absolute;
-        bottom: 0;
-        background: rgb(0, 0, 0);
-        background: rgba(0, 0, 0, 0.75);
-        color: #f1f1f1;
-        width: 100%;
-        line-height: normal;
-    }
-
-    .description {
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: rgba(57, 57, 57, 0.95);
-        top: 0;
-        left: 0;
-        transform: scale(0);
-        transition: all 0.2s 0.1s ease-in-out;
-        color: #fff;
-
-        overflow: scroll;
-
-        /* center overlay content */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .description span {
-        padding: 10%;
-    }
-
-    @media (max-width: 1200px) {
-        .description  span {
-            padding-top: 20%;
-            font-size: 2rem;
+        @media (min-width: 1200px) {
+            .noodleDiv {
+                width: 80%;
+                font-size: medium;
+            }
         }
-    }
 
-    .noodleDiv:hover .description {
-        transform: scale(1);
-    }
+        .noodleDiv .title {
+            position: absolute;
+            bottom: 0;
+            background: rgb(0, 0, 0);
+            background: rgba(0, 0, 0, 0.75);
+            color: #f1f1f1;
+            width: 100%;
+            line-height: normal;
+        }
+
+        .description {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: rgba(57, 57, 57, 0.95);
+            top: 0;
+            left: 0;
+            transform: scale(0);
+            transition: all 0.2s 0.1s ease-in-out;
+            color: #fff;
+
+            overflow: scroll;
+
+            /* center overlay content */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .description span {
+            padding: 10%;
+        }
+
+        @media (max-width: 1200px) {
+            .description span {
+                padding-top: 20%;
+                font-size: 2rem;
+            }
+        }
+
+        .noodleDiv:hover .description {
+            transform: scale(1);
+        }
 
 
-    .show {
-        display: block;
-    }
+        .show {
+            display: block;
+        }
 
-    /* Style the buttons */
-    .btn {
-        border: none;
-        outline: none;
-        padding: 12px 16px;
-        background-color: #f1f1f1;
-        font-size: 1rem;
-        cursor: pointer;
-    }
-
-    @media (max-width: 1200px) {
+        /* Style the buttons */
         .btn {
-            font-size: 3rem;
+            border: none;
+            outline: none;
+            padding: 12px 16px;
+            background-color: #f1f1f1;
+            font-size: 1rem;
+            cursor: pointer;
         }
-    }
 
-    .btn:hover {
-        background-color: #ddd;
-    }
+        @media (max-width: 1200px) {
+            .btn {
+                font-size: 3rem;
+            }
+        }
 
-    .btn.active {
-        background-color: #666;
-        color: white;
-    }
-</style>
+        .btn:hover {
+            background-color: #ddd;
+        }
+
+        .btn.active {
+            background-color: #666;
+            color: white;
+        }
+    </style>
+</head>
 
 <body>
 
@@ -139,14 +145,16 @@
         <div class="noodleDiv" data-objecttype="cars">
             <img src="002.jpg" style="width:100%;">
             <div class="title">
-                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu.</h3>
+                <h3>Praesent dictum accumsan justo, ullamcorper egestas purus molestie eu. ⭐⭐⭐</h3>
             </div>
             <div class="description">
                 <span>
                     <p><br />Really good, a bit spicy but not overwhelming. Flat broad noodles. Easy with chopsticks!
                         Put in bowl, add boiling water for 5 mins then drain the water, then add the ingredients and mix
                         it.</p>
-                    <a href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry Mart</a>
+                    <a
+                        href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry
+                        Mart</a>
                 </span>
             </div>
         </div>
@@ -160,7 +168,9 @@
                     <p><br />Really good, a bit spicy but not overwhelming. Flat broad noodles. Easy with chopsticks!
                         Put in bowl, add boiling water for 5 mins then drain the water, then add the ingredients and mix
                         it.</p>
-                    <a href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry Mart</a>
+                    <a
+                        href="https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html">Starry
+                        Mart</a>
                 </span>
             </div>
         </div>
