@@ -134,12 +134,12 @@
 <body>
 
     <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection(5)"> ⭐⭐⭐⭐⭐</button>
-        <button class="btn" onclick="filterSelection(4)"> ⭐⭐⭐⭐</button>
-        <button class="btn" onclick="filterSelection(3)"> ⭐⭐⭐</button>
-        <button class="btn" onclick="filterSelection(2)"> ⭐⭐</button>
-        <button class="btn" onclick="filterSelection(1)"> ⭐</button>
+        <button class="btn active" onclick="filterByRating('all')"> Show all</button>
+        <button class="btn" onclick="filterByRating(5)"> ⭐⭐⭐⭐⭐</button>
+        <button class="btn" onclick="filterByRating(4)"> ⭐⭐⭐⭐</button>
+        <button class="btn" onclick="filterByRating(3)"> ⭐⭐⭐</button>
+        <button class="btn" onclick="filterByRating(2)"> ⭐⭐</button>
+        <button class="btn" onclick="filterByRating(1)"> ⭐</button>
     </div>
 
     <div class="container">
@@ -245,9 +245,9 @@
     </div>
 
     <script>
-        filterSelection("all")
+        filterByRating("all")
 
-        function filterSelection(c) {
+        function filterByRating(c) {
 
             let querySelector = "[data-rating]";
             if (c != "all") {
