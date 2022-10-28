@@ -78,10 +78,12 @@
                 querySelector=`[data-objecttype='${c}']`;
             };
             
+            //Hide all items
             document.querySelectorAll("[data-objecttype]").forEach(i => {
                 i.classList.remove("show");
             });
 
+            //Show items based on the filter
             document.querySelectorAll(querySelector).forEach(i => {
                 i.classList.add("show");
             })
