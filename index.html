@@ -54,15 +54,15 @@
 
     <div class="container">
         <div class="filterDiv cars" data-objecttype="cars">BMW</div>
-        <div class="filterDiv colors fruits" data-objecttype="fruits">Orange</div>
+        <div class="filterDiv colors fruits" data-objecttype="colors fruits">Orange</div>
         <div class="filterDiv cars" data-objecttype="cars">Volvo</div>
         <div class="filterDiv colors" data-objecttype="colors">Red</div>
-        <div class="filterDiv cars animals" data-objecttype="animals">Mustang</div>
+        <div class="filterDiv cars animals" data-objecttype="cars animals">Mustang</div>
         <div class="filterDiv colors" data-objecttype="colors">Blue</div>
         <div class="filterDiv animals" data-objecttype="animals">Cat</div>
         <div class="filterDiv animals" data-objecttype="animals">Dog</div>
         <div class="filterDiv fruits" data-objecttype="fruits">Melon</div>
-        <div class="filterDiv fruits animals" data-objecttype="fruits">Kiwi</div>
+        <div class="filterDiv fruits animals" data-objecttype="fruits animals">Kiwi</div>
         <div class="filterDiv fruits" data-objecttype="fruits">Banana</div>
         <div class="filterDiv fruits" data-objecttype="fruits">Lemon</div>
         <div class="filterDiv animals" data-objecttype="animals">Cow</div>
@@ -75,7 +75,7 @@
 
             let querySelector="[data-objecttype]";
             if (c != "all") {
-                querySelector=`[data-objecttype='${c}']`;
+                querySelector=`[data-objecttype*='${c}']`;
             };
             
             //Hide all items
