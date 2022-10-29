@@ -1,6 +1,7 @@
 ---
 rating: 3
 noodletype: thin
+liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/cung-dinh-kool-brand-vietnamese-instant-noodle-bowl-hot-spicy-salted-egg-flavour-92g.html
 ---

@@ -1,6 +1,7 @@
 ---
 rating: 3
 noodletype: thin
+liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-chongqing-noodle-bowl-spicy-hot.html
 ---

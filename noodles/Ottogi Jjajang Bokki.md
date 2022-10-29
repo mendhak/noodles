@@ -1,6 +1,7 @@
 ---
 rating: 1
 noodletype: thin
+liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/ottogi-jjajang-bokki-bowl-120g.html
 ---

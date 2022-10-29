@@ -1,6 +1,7 @@
 ---
 rating: 1
 noodletype: thin
+liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-original-hot-sour-flavour-instant-vermicelli-bowl-noodle-105g.html
 ---

@@ -2,6 +2,7 @@
 
 rating: 4
 noodletype: broad
+liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-beef-flavour-110g.html
 ---

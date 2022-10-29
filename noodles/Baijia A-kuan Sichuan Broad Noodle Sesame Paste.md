@@ -2,6 +2,7 @@
 
 rating: 2
 noodletype: broad
+liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-broad-noodle-sesame-paste-flavour-bowl-120g.html
 ---

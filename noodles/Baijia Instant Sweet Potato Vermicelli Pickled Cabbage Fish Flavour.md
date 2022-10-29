@@ -1,6 +1,7 @@
 ---
 rating: 3
 noodletype: thin
+liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-instant-vermicelli-pickled-chinese-cabbage-fish-110g.html
 ---

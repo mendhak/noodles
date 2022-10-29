@@ -2,7 +2,7 @@
 
 rating: 4
 noodletype: thin
-
+liquid: broth
 ---
 
 I found this in a high street shop.  It's a nice, soupy, but not very spicy, noodle with broth.  It has beef pieces and there's a good pickle-ish flavor that comes through.  

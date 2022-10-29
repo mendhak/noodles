@@ -2,6 +2,7 @@
 
 rating: 3
 noodletype: thin
+liquid: broth
 ---
 
 I found this at a High Street shop, but couldn't find it online.  

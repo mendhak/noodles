@@ -207,10 +207,17 @@
         <button class="btn" onclick="filterByNoodleType('glassy')"> Glassy noodles</button>
     </div>
 
+    <div id="buttonLiquidTypeContainer" class="buttonContainer">
+        <button class="btn active" onclick="filterByLiquidType('all')"> All liquid types</button>
+        <button class="btn" onclick="filterByLiquidType('broth')"> Broth</button>
+        <button class="btn" onclick="filterByLiquidType('dry')"> Dry</button>
+    </div>
+
+
     <div class="container">
 
         {% for sect in collections.sections %}
-        <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}">
+        <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}" data-liquidtype="{{ sect.data.liquid }}">
             <img src="{{ sect.data.imagePath }}" alt="{{ sect.data.title }}" onclick="showDescriptionOverlay(this);" >
             <div class="title">
                 <h3>{{ sect.data.title }} {{ sect.data.rating | stars }}</h3>
@@ -243,11 +250,13 @@
 
         var selectedFilters = {
             rating: "",
-            noodleType: ""
+            noodleType: "",
+            liquidtype: ""
         }
 
-        filterByRating("all")
-        filterByNoodleType("all")
+        filterByRating("all");
+        filterByNoodleType("all");
+        filterByLiquidType("all");
 
         function filterByRating(c) {
 
@@ -257,6 +266,18 @@
             };
 
             selectedFilters.rating = querySelector;
+            applyFilters();
+
+        }
+
+        function filterByLiquidType(c) {
+
+            let querySelector = "[data-liquidtype]";
+            if (c != "all") {
+                querySelector = `[data-liquidtype*='${c}']`;
+            };
+
+            selectedFilters.liquidtype = querySelector;
             applyFilters();
 
         }
@@ -279,7 +300,7 @@
                 i.classList.remove("show");
             });
 
-            let combinedQuerySelectors = selectedFilters.rating + selectedFilters.noodleType
+            let combinedQuerySelectors = selectedFilters.rating + selectedFilters.noodleType + selectedFilters.liquidtype;
 
             document.querySelectorAll(combinedQuerySelectors).forEach(i => {
                 i.classList.add("show");
@@ -289,6 +310,7 @@
 
         setupButtonHighlightMethod("buttonRatingContainer");
         setupButtonHighlightMethod("buttonNoodleTypeContainer");
+        setupButtonHighlightMethod("buttonLiquidTypeContainer");
 
         function setupButtonHighlightMethod(buttonContainerId){
           // Add active class to the current button (highlight it)
