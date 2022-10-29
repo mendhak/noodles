@@ -12,7 +12,7 @@ module.exports = (function(eleventyConfig){
         return "⭐".repeat(parseFloat(rating));
     });
 
-    //Read Markdown files from the noodles directory.  
+    //Create a collection from the Markdown files in the noodles directory.  
     eleventyConfig.addCollection('sections', function(collectionApi) {
         let sections = collectionApi.getFilteredByGlob('noodles/*.*');
         sections.forEach(item => {
@@ -32,9 +32,10 @@ module.exports = (function(eleventyConfig){
                 item.data.title = item.fileSlug;
             }
 
-
         });
 
+        //Sort the collection by rating, from highest to lowest
+        sections.sort((a,b) => b.data.rating - a.data.rating);
         console.log(sections);
         
         return sections;
