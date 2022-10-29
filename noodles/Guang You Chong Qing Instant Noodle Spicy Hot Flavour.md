@@ -1,6 +1,6 @@
 ---
 rating: 4
-noodletype: thin
+noodletype: thin flat
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/guang-you-chong-qing-instant-noodle-spicy-hot-flavour-105g.html
 ---
