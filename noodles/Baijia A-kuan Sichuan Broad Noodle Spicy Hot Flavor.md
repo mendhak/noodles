@@ -10,4 +10,4 @@ Really good, one of my favorites, a flat broad noodle that's easy with chopstick
 
 Put in bowl, add hot water for 5 mins then drain the water. Add the ingredients and mix it up.  
 
-![image](images/001.jpg)
+![Baijia A-kuan Sichuan Broad Noodle Spicy Hot Flavor](images/001.jpg)
