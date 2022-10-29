@@ -1,7 +1,7 @@
 
-## Instant Noodles for the office
+## Instant noodles for the office
 
-Instant Noodles ratings and reviews. My focus is noodles which I can have with just hot water and no cooking. That is, in the office.
+Instant Noodles ratings and reviews, with filters. My focus is noodles which I can have with just hot water and no cooking. That is, in the office.
 
 Website is at: https://noodles.mendhak.com/
 
