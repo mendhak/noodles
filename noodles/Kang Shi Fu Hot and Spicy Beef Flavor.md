@@ -1,7 +1,7 @@
 ---
 
 rating: 3
-noodletype: thing
+noodletype: thin
 ---
 
 I found this at a High Street shop, but couldn't find it online.  
