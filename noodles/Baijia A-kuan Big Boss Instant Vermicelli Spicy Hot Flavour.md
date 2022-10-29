@@ -1,6 +1,6 @@
 ---
 rating: 3
-noodletype: thin
+noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-instant-vermicelli-spicy-hot-flavour-100g.html
