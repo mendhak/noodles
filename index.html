@@ -149,21 +149,6 @@
             padding: 5px;
         }
 
-        .close {
-            position: absolute;
-            top: 0;
-            right: 0;
-            background:#ccc;
-            cursor: pointer;
-            padding: 20px;
-            z-index: 999;
-        }
-
-        .close:after {
-            content: "\00d7";
-            font-size: xx-large;
-        }
-
         hr {
             border:1px solid #e0e0e0;
         }
@@ -222,9 +207,8 @@
             <div class="title">
                 <h3>{{ sect.data.title }} {{ sect.data.rating | stars }}</h3>
             </div>
-            <div class="descriptionOverlay">
-                <span class="close" onclick="closeDescriptionOverlay(this);"></span>
-                <span class="descriptionText">
+            <div class="descriptionOverlay" onclick="closeDescriptionOverlay(this);">
+                <span class="descriptionText" >
                     {{ sect.templateContent | removeImgTag }}
                     <a href="{{ sect.data.link_url }}">{{ sect.data.link_text }}</a>
                 </span>
@@ -328,8 +312,8 @@
             }  
         }
 
-        function closeDescriptionOverlay(closeElement){
-            closeElement.parentNode.style.transform='scale(0)';
+        function closeDescriptionOverlay(overlayElement){
+            overlayElement.style.transform='scale(0)';
         }
 
         function showDescriptionOverlay(imgElement){
