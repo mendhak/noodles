@@ -1,7 +1,7 @@
 ---
 
 rating: 3
-noodletype: thin
+noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/haidilao-instant-vermicelli-hot-and-sour-flavour-118g.html 

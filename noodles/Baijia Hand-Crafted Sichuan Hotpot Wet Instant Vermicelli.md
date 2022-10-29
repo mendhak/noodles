@@ -1,6 +1,6 @@
 ---
 rating: 3
-noodletype: glassy
+noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-sichuan-hot-pot-vermicelli-hand-crafted-188g.html

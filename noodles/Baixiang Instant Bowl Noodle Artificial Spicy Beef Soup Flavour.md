@@ -1,6 +1,6 @@
 ---
 rating: 2
-noodletype: thin
+noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuang-big-boss-hot-sour-vermicelli-145g.html
