@@ -218,7 +218,7 @@
 
         {% for sect in collections.sections %}
         <div class="noodleDiv" data-noodletype="{{ sect.data.noodletype }}" data-rating="{{ sect.data.rating }}" data-liquidtype="{{ sect.data.liquid }}">
-            <img src="{{ sect.data.imagePath }}" alt="{{ sect.data.title }}" onclick="showDescriptionOverlay(this);" >
+            <img loading="lazy" src="{{ sect.data.imagePath }}" alt="{{ sect.data.title }}" onclick="showDescriptionOverlay(this);" >
             <div class="title">
                 <h3>{{ sect.data.title }} {{ sect.data.rating | stars }}</h3>
             </div>
@@ -242,8 +242,8 @@
         <!-- Place this tag where you want the button to render. -->
         <div>
             <a href="https://github.com/mendhak/noodles/">
-                <img src="images/github_icon.png" />
-                <img src="images/github_text.png" />
+                <img loading="lazy" src="images/github_icon.png" />
+                <img loading="lazy" src="images/github_text.png" />
             </a>
         </div>
     </div>
