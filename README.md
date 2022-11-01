@@ -10,6 +10,14 @@ Website is at: https://noodles.mendhak.com/
 
 This repo uses 11ty to generate a single HTML file from many Markdown files.  This allows me to write the noodle reviews in Markdown with some frontmatter and images, and it renders on the page after a build. 
 
+### Run with Docker Compose
+
+    docker-compose up
+
+Then browse to http://localhost:8080/
+
+### Run with NodeJS on host
+
 Install dependencies, 
 
     npm install
@@ -20,6 +28,8 @@ To build and serve:
 
 Then browse to http://localhost:8080/
 
+
+## Images
 
 When adding images, remove the exif using
 
