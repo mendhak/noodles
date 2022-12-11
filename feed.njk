@@ -29,7 +29,7 @@
   {%- set absolutePostUrl =  metadata.url %}
   <entry>
     <title>{{ post.data.title }}</title>
-    <link href="{{ absolutePostUrl }}"/>
+    <link href="{{ metadata.url + '#' + post.data.title | slugify }}"/>
     <updated>{{ post.date | dateToRfc3339 }}</updated>
     <id>{{ post.data.title }}</id>
     <content xml:lang="{{ metadata.language }}" type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
