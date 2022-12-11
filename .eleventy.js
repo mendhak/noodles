@@ -1,6 +1,11 @@
+const pluginRss = require("@11ty/eleventy-plugin-rss");
+
 module.exports = (function(eleventyConfig){
 
     eleventyConfig.setDynamicPermalinks(false);
+    
+    //RSS plugin https://www.11ty.dev/docs/plugins/rss/
+    eleventyConfig.addPlugin(pluginRss);
 
     //Remove image tag from the rendered Markdown content, because it's in the frontmatter.
     eleventyConfig.addFilter("removeImgTag", function(renderedMarkdown) {
@@ -31,7 +36,6 @@ module.exports = (function(eleventyConfig){
             if(!item.data.title){
                 item.data.title = item.fileSlug;
             }
-
         });
 
         //Sort the collection by rating, from highest to lowest

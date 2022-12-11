@@ -2,7 +2,7 @@ version: '3'
 
 services:
   eleventy:
-    image: node:16-slim
+    image: timbru31/node-alpine-git
     volumes:
       - ${PWD}:/app
     working_dir: /app
