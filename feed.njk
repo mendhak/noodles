@@ -4,6 +4,7 @@
   "eleventyExcludeFromCollections": true,
   "metadata": {
     "title": "Instant Noodles 🍜 for the office — ratings and reviews",
+    "logo": "noodles_icon.png",
     "subtitle": "Instant Noodles I have tried in the office with just hot water. No cooking.",
     "language": "en",
     "url": "https://noodles.mendhak.com/",
@@ -16,6 +17,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:base="{{ metadata.url }}">
   <title>{{ metadata.title }}</title>
+  <icon>{{ metadata.logo | absoluteUrl(metadata.url)}}</icon>
+  <logo>{{ metadata.logo | absoluteUrl(metadata.url)}}</logo>
   <subtitle>{{ metadata.subtitle }}</subtitle>
   <link href="{{ permalink | absoluteUrl(metadata.url) }}" rel="self"/>
   <link href="{{ metadata.url }}"/>
