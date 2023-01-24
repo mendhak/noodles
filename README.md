@@ -29,10 +29,16 @@ To build and serve:
 Then browse to http://localhost:8080/
 
 
-## Images
+## Adding new images
 
 When adding images, remove the exif using
 
     exiftool -overwrite_original -all= noodles/images/005.jpg
 
+Resize it to 800px width.      
+
+## Adding new files
+
+When adding new content, create the new .md file, then commit it before running docker-compose up.  
+This is because the post date comes from the 'git Last Modified' date, which requires the file being committed first. 
     
