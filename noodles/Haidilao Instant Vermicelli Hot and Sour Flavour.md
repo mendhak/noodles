@@ -5,6 +5,7 @@ noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/haidilao-instant-vermicelli-hot-and-sour-flavour-118g.html 
+date: 2022-10-29
 ---
 
 Add all ingredients, then the hot water, and wait 5 minutes, mix. 

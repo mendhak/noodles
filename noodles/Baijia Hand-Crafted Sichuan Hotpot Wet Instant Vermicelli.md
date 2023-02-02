@@ -4,6 +4,7 @@ noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-sichuan-hot-pot-vermicelli-hand-crafted-188g.html
+date: 2022-10-29
 ---
 
 It's a vermicelli, which is uncommon in instant noodles.  The packaging packs a lot of ingredients in one place.  

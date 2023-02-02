@@ -4,6 +4,7 @@ noodletype: thin glassy
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-instant-vermicelli-spicy-hot-flavour-100g.html
+date: 2022-10-29
 ---
 
 The "Big Boss" line is in smaller cups.  It's actually quite decent in terms of spiciness and hot liquid, but not overwhelming.  

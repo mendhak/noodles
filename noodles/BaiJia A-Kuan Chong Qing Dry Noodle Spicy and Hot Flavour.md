@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-chongqing-noodle-bowl-spicy-hot.html
+date: 2022-10-29
 ---
 
 This is from the "Chong Qing" line but it wasn't terrible like the "battery acid" one.  This one says "DRY" but it's a soupy type!

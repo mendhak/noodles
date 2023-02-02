@@ -4,6 +4,7 @@ noodletype: thin
 liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/cung-dinh-kool-brand-vietnamese-instant-noodle-bowl-hot-spicy-salted-egg-flavour-92g.html
+date: 2022-10-29
 ---
 
 The name says spicy, but it isn't spicy, it's more savoury.  The taste is quite good, like salted eggs, and different from most other noodles.  However it isn't very filling and isn't sufficient on its own. 

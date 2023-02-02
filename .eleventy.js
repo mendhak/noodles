@@ -40,7 +40,7 @@ module.exports = (function(eleventyConfig){
 
         //Sort the collection by rating, from highest to lowest
         sections.sort((a,b) => b.date - a.date);
-        console.log(sections);
+        
         
         return sections;
     });

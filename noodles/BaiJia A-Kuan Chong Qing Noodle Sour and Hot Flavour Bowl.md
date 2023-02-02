@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-chongqing-noodles-bowl-sour-hot.html
+date: 2022-10-29
 ---
 
 No instructions, but it's a soup type.  I found a YouTube video in Romanian of someone making it and I had to time them to figure it out.   

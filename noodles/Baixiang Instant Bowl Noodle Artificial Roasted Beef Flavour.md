@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baixiang-instant-bowl-noodle-artificial-roasted-beef-flavour-145g.html
+date: 2022-11-01
 ---
 
 Quite filling, plenty of broth and noodles.  The broth is tasty and easy to gulp down.  

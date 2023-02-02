@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-original-hot-sour-flavour-instant-vermicelli-bowl-noodle-105g.html
+date: 2022-10-29
 ---
 
 There were no instructions given, but it's a soup type. 

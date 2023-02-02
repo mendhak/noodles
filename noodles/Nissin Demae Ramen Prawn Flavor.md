@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/nissin-demae-ramen-prawn-flavour-instant-noodle-100g.html
+date: 2022-10-29
 ---
 
 The flavor is very mild, even the prawn flavoring is mild, not spicy at all.  It's probably good for a one-off. 

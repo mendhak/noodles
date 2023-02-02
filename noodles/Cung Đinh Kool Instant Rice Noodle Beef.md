@@ -4,6 +4,7 @@ noodletype: thin flat
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/cung-dinh-kool-brand-vietnamese-instant-noodle-bowl-hot-spicy-salted-egg-flavour-92g.html
+date: 2022-10-29
 ---
 
 It's not spicy, but a nice hearty beefy broth. The noodles are thin and flat, which goes well with the broth. 

@@ -4,6 +4,7 @@ noodletype: thin
 liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/maggi-pedas-giler-mi-goreng-2x-ayam-bakar-bowl-99g.html
+date: 2022-10-29
 ---
 
 **ZERO stars!  Never again!**

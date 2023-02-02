@@ -4,6 +4,7 @@ noodletype: thin
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/mama-oriental-style-instant-noodle-kimchi-flavour-90g.html
+date: 2022-10-29
 ---
 
 Kimchi is a great flavor for noodles.  This one didn't taste of kimchi to start with, but the taste, and the spiciness, accumulated.  Really good.   

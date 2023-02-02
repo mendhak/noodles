@@ -5,6 +5,7 @@ noodletype: broad
 liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-sichuan-broad-noodle-chilli-oil-flavour-spicy-hot-bowl-110g.html
+date: 2022-10-29
 ---
 
 Another broad noodle winner.  It's hot and sour, but not overwhelmingly so (like the battery-acid type Chong Qing noodles).  It's almost as good as the Broad Noodle spicy hot version.  

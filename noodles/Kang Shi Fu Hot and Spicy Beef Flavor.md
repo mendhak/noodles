@@ -3,6 +3,7 @@
 rating: 3
 noodletype: thin
 liquid: broth
+date: 2022-10-29
 ---
 
 I found this at a High Street shop, but couldn't find it online.  

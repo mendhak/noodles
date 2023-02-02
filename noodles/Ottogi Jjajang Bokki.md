@@ -4,6 +4,7 @@ noodletype: thin
 liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/ottogi-jjajang-bokki-bowl-120g.html
+date: 2022-10-29
 ---
 
 Noodles with a supposedly Korean Style black bean sauce.  

@@ -4,6 +4,7 @@ noodletype: thin flat
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/guang-you-chongqing-instant-noodle-za-jiang-flavour-110g.html
+date: 2022-10-29
 ---
 
 

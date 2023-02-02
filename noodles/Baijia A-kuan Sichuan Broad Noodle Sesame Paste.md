@@ -5,6 +5,7 @@ noodletype: broad
 liquid: dry
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/baijia-a-kuan-broad-noodle-sesame-paste-flavour-bowl-120g.html
+date: 2022-10-29
 ---
 
 Although I like broad noodles, this one wasn't very good.  The sesame paste tasted more of peanuts than sesame and overrode all other flavors. 
