@@ -1,5 +1,5 @@
 ---
-rating: 5
+rating: 4
 noodletype: thin
 liquid: broth
 link_text: Oriental Mart
