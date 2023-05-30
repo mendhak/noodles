@@ -11,4 +11,4 @@ Yes, duck blood. The blood is actually in coagulated tofu-like pieces, and actua
 
 Add all the ingredients into the bowl, and add hot water till it's covered, about 500ml. Leave it for 4-5 minutes, then mix and serve. 
 
-![Shi Zu Ren Duck Blood Instant Vermicelli](images/040.jpg)
+![](images/040.jpg)
