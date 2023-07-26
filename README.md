@@ -12,7 +12,8 @@ This repo uses 11ty to generate a single HTML file from many Markdown files.  Th
 
 ### Run with Docker Compose
 
-    docker-compose up
+    npm install  
+    docker compose up
 
 Then browse to http://localhost:8080/
 
