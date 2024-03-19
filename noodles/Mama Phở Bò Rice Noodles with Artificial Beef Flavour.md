@@ -1,6 +1,6 @@
 ---
 rating: 2
-noodletype: flat
+noodletype: thin flat
 liquid: broth
 link_text: Starry Mart
 link_url: https://starrymart.co.uk/mama-pho-bo-rice-noodles-with-artificial-beef-flavour-65g.html
