@@ -1,5 +1,5 @@
 ---
-rating: 3
+rating: 2
 noodletype: thin glassy
 liquid: dry
 link_text: Starry Mart
