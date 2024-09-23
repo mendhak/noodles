@@ -1,5 +1,5 @@
 ---
-rating: 4
+rating: 3
 noodletype: thin
 liquid: broth
 link_text: Hiyou
