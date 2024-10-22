@@ -1,5 +1,5 @@
 ---
-rating: 4
+rating: 5
 noodletype: thin
 liquid: broth
 link_text: Starry Mart
