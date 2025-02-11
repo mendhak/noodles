@@ -2,6 +2,8 @@
 rating: 3
 noodletype: thin
 liquid: dry
+link_url: https://starrymart.co.uk/paldo-ilpoom-jiajangmen-chajang-noodle-120g.html
+link_text: Starry Mart
 date: 2025-01-28
 ---
 
